@@ -1,0 +1,16 @@
+:root {
+  font-family: Lexend;
+  background-color: #1a1a1a;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.bg-dark-navbar{
+  background-color: #1a1a1a !important;
+}
