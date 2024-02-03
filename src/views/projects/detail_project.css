@@ -1,0 +1,15 @@
+@media (min-width: 768px) {
+  .container-project {
+    max-width: 768px !important;
+  }
+}
+
+.tag-category{
+    background-color: #1A954D;
+    width: 130px;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 8px;
+    padding: 4px;
+    color: white;
+}
