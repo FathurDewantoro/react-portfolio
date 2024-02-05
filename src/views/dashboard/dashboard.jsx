@@ -16,7 +16,7 @@ function Dashboard() {
         <Container className="text-center mt-5 pt-5">
           <Image
             width={150}
-            src="/src/assets/images/big_avatar.png"
+            src="/assets/images/big_avatar.png"
             roundedCircle
           />
           <h5 className="text-white pt-3 m-0 f-l-medium f-22">
@@ -52,7 +52,7 @@ function Dashboard() {
             <ul className="custom-list d-flex flex-row overflow-x-auto ps-0">
               {list.map((item, index) => (
                 <Image
-                  src={"/src/assets/images/" + item}
+                  src={"/assets/images/" + item}
                   className={index === list.length - 1 ? "" : "me-4"}
                 />
               ))}
@@ -92,7 +92,7 @@ function Dashboard() {
         <h4 className="text-white f-l-bold f-36">Why Hire Me ?</h4>
         <Row className="mt-5">
           <Col className="mt-3">
-            <Image src="/src/assets/images/communicative.png"></Image>
+            <Image src="/assets/images/communicative.png"></Image>
             <h5 className="text-white mt-3 f-l-medium">Communicative</h5>
             <p className="text-gray f-14">
               My strong communication skills ensure smooth information flow
@@ -100,7 +100,7 @@ function Dashboard() {
             </p>
           </Col>
           <Col className="mt-3">
-            <Image src="/src/assets/images/collaborative.png"></Image>
+            <Image src="/assets/images/collaborative.png"></Image>
             <h5 className="text-white mt-3 f-l-medium">Collaborative</h5>
             <p className="text-gray f-14">
               I have experience working collaboratively, understanding the
@@ -108,7 +108,7 @@ function Dashboard() {
             </p>
           </Col>
           <Col className="mt-3">
-            <Image src="/src/assets/images/user-centered.png"></Image>
+            <Image src="/assets/images/user-centered.png"></Image>
             <h5 className="text-white mt-3 f-l-medium">
               User-Centric Approach
             </h5>
@@ -118,7 +118,7 @@ function Dashboard() {
             </p>
           </Col>
           <Col className="mt-3">
-            <Image src="/src/assets/images/client-favourite.png"></Image>
+            <Image src="/assets/images/client-favourite.png"></Image>
             <h5 className="text-white mt-3 f-l-medium">Client's Favourite</h5>
             <p className="text-gray f-14">
               I am committed to exceeding client expectations, prioritizing
@@ -140,19 +140,19 @@ function Dashboard() {
               height={30}
               style={{ marginRight: 20 }}
               className=""
-              src="/src/assets/icons/linkein.png"
+              src="/assets/icons/linkein.png"
             ></Image>
             <Image
               height={30}
               style={{ marginRight: 20 }}
               className=""
-              src="/src/assets/icons/github.png"
+              src="/assets/icons/github.png"
             ></Image>
             <Image
               height={30}
               style={{ marginRight: 20 }}
               className=""
-              src="/src/assets/icons/dribble.png"
+              src="/assets/icons/dribble.png"
             ></Image>
           </div>
         </Container>

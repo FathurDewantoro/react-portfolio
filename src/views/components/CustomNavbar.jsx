@@ -1,5 +1,6 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 function CustomNavbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -23,27 +24,29 @@ function CustomNavbar() {
       data-bs-theme="dark"
     >
       <Container>
-        <Navbar.Brand href="/">
-          <img
-            alt=""
-            src="/src/assets/icons/F_logo.png"
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-          />
+        <Navbar.Brand>
+          <Link to="/">
+            <img
+              alt=""
+              src="/assets/icons/F_logo.png"
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+            />
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link className="navbar-item f-l-light" href="/projects">
+            <Link to="/projects" className="nav-link f-l-light">
               Projects
-            </Nav.Link>
-            <Nav.Link className="navbar-item f-l-light" href="/cv-resume">
+            </Link>
+            <Link to="/cv-resume" className="nav-link f-l-light">
               CV Resume
-            </Nav.Link>
-            <Nav.Link className="navbar-item f-l-light" href="/social-media">
+            </Link>
+            <Link to="/social-media" className="nav-link f-l-light">
               Social Media
-            </Nav.Link>
+            </Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

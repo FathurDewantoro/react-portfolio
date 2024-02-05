@@ -14,9 +14,9 @@ function Projects() {
         </p>
 
         <Row className="card-projects-left">
-          <div className="col-md-6">
+          <div className="col-md-6 ">
             <Image
-              src="/src/assets/images/projects/kashku/Preview_kashsku.png"
+              src="/assets/images/projects/presensi/banner-presensi.png"
               width={"100%"}
             ></Image>
           </div>
@@ -28,6 +28,7 @@ function Projects() {
               <p className="f-22 f-l-bold text-white ">
                 Flutter UI Design Mobile Application EStore with FakeStore API
               </p>
+              <p className="tag-category-green-r">Figma Design</p>
             </a>
             <p class="text-gray f-14">
               Created by{" "}
@@ -53,6 +54,8 @@ function Projects() {
                 Flutter UI Design Mobile Application EStore with FakeStore API
               </p>
             </a>
+            <p className="tag-category-blue-l">Figma Design</p>
+
             <p class="text-gray f-14">
               Created by{" "}
               <span className="f-i-medium text-white">fathurdewantoro</span>
@@ -68,7 +71,7 @@ function Projects() {
 
           <div className="col-md-6 order-md-1">
             <Image
-              src="/src/assets/images/projects/kashku/Preview_kashsku.png"
+              src="/assets/images/projects/kashku/Preview_kashsku.png"
               width={"100%"}
             ></Image>
           </div>
@@ -77,7 +80,7 @@ function Projects() {
         <Row className="card-projects-left">
           <div className="col-md-6">
             <Image
-              src="/src/assets/images/projects/kashku/Preview_kashsku.png"
+              src="/assets/images/projects/kashku/Preview_kashsku.png"
               width={"100%"}
             ></Image>
           </div>
@@ -90,6 +93,7 @@ function Projects() {
                 Flutter UI Design Mobile Application EStore with FakeStore API
               </p>
             </a>
+            <p className="tag-category-blue-r">Figma Design</p>
             <p class="text-gray f-14">
               Created by{" "}
               <span className="f-i-medium text-white">fathurdewantoro</span>

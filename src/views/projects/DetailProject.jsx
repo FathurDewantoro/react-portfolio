@@ -34,7 +34,7 @@ function DetailProject() {
           <h3 className="mt-3 f-l-bold">E-Store Mobile Application</h3>
           <p className="tag-category">Figma Design</p>
           <Image
-            src="/src/assets/images/projects/kashku/Preview_kashsku.png"
+            src="/assets/images/projects/kashku/Preview_kashsku.png"
             width={"100%"}
           ></Image>
 
@@ -51,19 +51,19 @@ function DetailProject() {
           <Carousel data-bs-theme="dark">
             <Carousel.Item>
               <Image
-                src="/src/assets/images/projects/kashku/Mockup_kashku-1.png"
+                src="/assets/images/projects/kashku/Mockup_kashku-1.png"
                 width={"100%"}
               ></Image>
             </Carousel.Item>
             <Carousel.Item>
               <Image
-                src="/src/assets/images/projects/kashku/Mockup_kashku-2.png"
+                src="/assets/images/projects/kashku/Mockup_kashku-2.png"
                 width={"100%"}
               ></Image>
             </Carousel.Item>
             <Carousel.Item>
               <Image
-                src="/src/assets/images/projects/kashku/Mockup_kashku-3.png"
+                src="/assets/images/projects/kashku/Mockup_kashku-3.png"
                 width={"100%"}
               ></Image>
             </Carousel.Item>

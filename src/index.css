@@ -1,56 +1,56 @@
 @font-face {
   font-family: "Lexend-Light";
-  src: url("assets/fonts/Lexend-Light.ttf");
+  src: url("/assets/fonts/Lexend-Light.ttf");
 }
 
 @font-face {
   font-family: "Lexend-Regular";
-  src: url("assets/fonts/Lexend-Regular.ttf");
+  src: url("/assets/fonts/Lexend-Regular.ttf");
 }
 
 @font-face {
   font-family: "Lexend-Medium";
-  src: url("assets/fonts/Lexend-Medium.ttf");
+  src: url("/assets/fonts/Lexend-Medium.ttf");
 }
 
 @font-face {
   font-family: "Lexend-SemiBold";
-  src: url("assets/fonts/Lexend-SemiBold.ttf");
+  src: url("/assets/fonts/Lexend-SemiBold.ttf");
 }
 
 @font-face {
   font-family: "Lexend-Bold";
-  src: url("assets/fonts/Lexend-Bold.ttf");
+  src: url("/assets/fonts/Lexend-Bold.ttf");
 }
 
 /* Inter */
 @font-face {
   font-family: "Inter-Light";
-  src: url("assets/fonts/Inter-Light.ttf");
+  src: url("/assets/fonts/Inter-Light.ttf");
 }
 
 @font-face {
   font-family: "Inter-Regular";
-  src: url("assets/fonts/Inter-Regular.ttf");
+  src: url("/assets/fonts/Inter-Regular.ttf");
 }
 
 @font-face {
   font-family: "Inter-Medium";
-  src: url("assets/fonts/Inter-Medium.ttf");
+  src: url("/assets/fonts/Inter-Medium.ttf");
 }
 
 @font-face {
   font-family: "Inter-SemiBold";
-  src: url("assets/fonts/Inter-SemiBold.ttf");
+  src: url("/assets/fonts/Inter-SemiBold.ttf");
 }
 
 @font-face {
   font-family: "Inter-Bold";
-  src: url("assets/fonts/Inter-Bold.ttf");
+  src: url("/assets/fonts/Inter-Bold.ttf");
 }
 @font-face {
   font-family: "DMSeriesDisplay-Regular";
-  src: url("assets/fonts/DMSerifDisplay-Regular.ttf");
+  src: url("/assets/fonts/DMSerifDisplay-Regular.ttf");
 }
 
 
@@ -328,7 +328,7 @@ body {
 
 /* Section Interested */
 .section-interested {
-  background-image: url("assets/images/topographic.png");
+  background-image: url("/assets/images/topographic.png");
   background-repeat: no-repeat;
   position: relative;
   background-position-x: right !important;
@@ -337,7 +337,7 @@ body {
 }
 
 .mobile-cursor {
-  background-image: url("assets/images/mobile-cursor.png");
+  background-image: url("/assets/images/mobile-cursor.png");
   background-repeat: no-repeat;
   position: relative;
   background-size: 130px;
@@ -348,7 +348,7 @@ body {
   height: 100px;
 }
 .web-cursor {
-  background-image: url("assets/images/web-cursor.png");
+  background-image: url("/assets/images/web-cursor.png");
   background-repeat: no-repeat;
   position: relative;
   background-size: 120px;
@@ -359,7 +359,7 @@ body {
   height: 100px;
 }
 .section-introduce {
-  background-image: url("assets/images/grid.png");
+  background-image: url("/assets/images/grid.png");
   background-repeat: no-repeat;
   position: relative;
   background-position-y: -16vw !important;
@@ -376,7 +376,7 @@ body {
 }
 
 .footer-pattern {
-  background-image: url("assets/images/footer-pattern.png");
+  background-image: url("/assets/images/footer-pattern.png");
   background-repeat: no-repeat;
   position: absolute;
   background-position-y: center !important;
@@ -403,6 +403,10 @@ body {
   font-weight: bold;
   font-family: "DMSeriesDisplay-Regular";
   margin-right: .75em;
+}
+
+.image-banner{
+  border-radius: 10px;
 }
 
 
@@ -435,7 +439,7 @@ body {
 /* Screen Mobile */
 @media (max-width: 575.98px) {
   .mobile-cursor {
-    background-image: url("assets/images/mobile-cursor.png");
+    background-image: url("/assets/images/mobile-cursor.png");
     background-repeat: no-repeat;
     position: relative;
     background-size: 135px;
@@ -446,7 +450,7 @@ body {
     height: 100px;
   }
   .web-cursor {
-    background-image: url("assets/images/web-cursor.png");
+    background-image: url("/assets/images/web-cursor.png");
     background-repeat: no-repeat;
     position: relative;
     background-size: 120px;
