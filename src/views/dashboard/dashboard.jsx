@@ -2,8 +2,27 @@ import { Row, Image, Col, Button } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import React from "react";
 import CustomNavbar from "../components/CustomNavbar";
+import { useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
+
+function useIsBack() {
+  const location = useLocation();
+  const [isBack, setIsBack] = useState(false);
+
+  useEffect(() => {
+    setIsBack(sessionStorage[location.pathname + "_key"] === location.key);
+    sessionStorage[location.pathname + "_key"] = location.key;
+  }, [location]);
+
+  return isBack;
+}
 
 function Dashboard() {
+
+  const isBack = useIsBack();
+  if (!isBack) {
+    window.scrollTo(0, 0);
+  }
   const list = ["work-1.png", "work-3.png", "work-2.png"];
 
 
@@ -16,7 +35,7 @@ function Dashboard() {
         <Container className="text-center mt-5 pt-5">
           <Image
             width={150}
-            src="/assets/images/big_avatar.png"
+            src="/assets/images/avatar/big_avatar.png"
             roundedCircle
           />
           <h5 className="text-white pt-3 m-0 f-l-medium f-22">
@@ -52,7 +71,7 @@ function Dashboard() {
             <ul className="custom-list d-flex flex-row overflow-x-auto ps-0">
               {list.map((item, index) => (
                 <Image
-                  src={"/assets/images/" + item}
+                  src={"/assets/images/work/" + item}
                   className={index === list.length - 1 ? "" : "me-4"}
                 />
               ))}
@@ -92,7 +111,7 @@ function Dashboard() {
         <h4 className="text-white f-l-bold f-36">Why Hire Me ?</h4>
         <Row className="mt-5">
           <Col className="mt-3">
-            <Image src="/assets/images/communicative.png"></Image>
+            <Image src="/assets/images/avatar/communicative.png"></Image>
             <h5 className="text-white mt-3 f-l-medium">Communicative</h5>
             <p className="text-gray f-14">
               My strong communication skills ensure smooth information flow
@@ -100,7 +119,7 @@ function Dashboard() {
             </p>
           </Col>
           <Col className="mt-3">
-            <Image src="/assets/images/collaborative.png"></Image>
+            <Image src="/assets/images/avatar/collaborative.png"></Image>
             <h5 className="text-white mt-3 f-l-medium">Collaborative</h5>
             <p className="text-gray f-14">
               I have experience working collaboratively, understanding the
@@ -108,7 +127,7 @@ function Dashboard() {
             </p>
           </Col>
           <Col className="mt-3">
-            <Image src="/assets/images/user-centered.png"></Image>
+            <Image src="/assets/images/avatar/user-centered.png"></Image>
             <h5 className="text-white mt-3 f-l-medium">
               User-Centric Approach
             </h5>
@@ -118,7 +137,7 @@ function Dashboard() {
             </p>
           </Col>
           <Col className="mt-3">
-            <Image src="/assets/images/client-favourite.png"></Image>
+            <Image src="/assets/images/avatar/client-favourite.png"></Image>
             <h5 className="text-white mt-3 f-l-medium">Client's Favourite</h5>
             <p className="text-gray f-14">
               I am committed to exceeding client expectations, prioritizing

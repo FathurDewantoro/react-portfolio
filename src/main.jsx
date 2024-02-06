@@ -8,7 +8,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import SecondPage from "./views/second_page.jsx";
 import Dashboard from "./views/dashboard/dashboard.jsx";
 import Projects from "./views/projects/projects.jsx";
-import DetailProject from "./views/projects/DetailProject.jsx";
+import ProjectPresensi from "./views/projects/presensi/project_presensi.jsx";
 
 const router = createBrowserRouter([
   {
@@ -28,13 +28,14 @@ const router = createBrowserRouter([
     element: <Projects />,
   },
   {
-    path: "/project/:idProject",
-    element: <DetailProject />,
+    path: "/project/presensi",
+    element: <ProjectPresensi />,
   },
 ]);
 
+
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+  <React.StrictMode >
     <RouterProvider router={router} />
   </React.StrictMode>
 );

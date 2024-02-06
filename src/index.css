@@ -328,7 +328,7 @@ body {
 
 /* Section Interested */
 .section-interested {
-  background-image: url("/assets/images/topographic.png");
+  background-image: url("/assets/images/pattern/topographic.png");
   background-repeat: no-repeat;
   position: relative;
   background-position-x: right !important;
@@ -337,7 +337,7 @@ body {
 }
 
 .mobile-cursor {
-  background-image: url("/assets/images/mobile-cursor.png");
+  background-image: url("/assets/images/cursor/mobile-cursor.png");
   background-repeat: no-repeat;
   position: relative;
   background-size: 130px;
@@ -348,7 +348,7 @@ body {
   height: 100px;
 }
 .web-cursor {
-  background-image: url("/assets/images/web-cursor.png");
+  background-image: url("/assets/images/cursor/web-cursor.png");
   background-repeat: no-repeat;
   position: relative;
   background-size: 120px;
@@ -359,7 +359,7 @@ body {
   height: 100px;
 }
 .section-introduce {
-  background-image: url("/assets/images/grid.png");
+  background-image: url("/assets/images/pattern/grid.png");
   background-repeat: no-repeat;
   position: relative;
   background-position-y: -16vw !important;
@@ -376,7 +376,7 @@ body {
 }
 
 .footer-pattern {
-  background-image: url("/assets/images/footer-pattern.png");
+  background-image: url("/assets/images/pattern/footer-pattern.png");
   background-repeat: no-repeat;
   position: absolute;
   background-position-y: center !important;
@@ -439,7 +439,7 @@ body {
 /* Screen Mobile */
 @media (max-width: 575.98px) {
   .mobile-cursor {
-    background-image: url("/assets/images/mobile-cursor.png");
+    background-image: url("/assets/images/cursor/mobile-cursor.png");
     background-repeat: no-repeat;
     position: relative;
     background-size: 135px;
@@ -450,7 +450,7 @@ body {
     height: 100px;
   }
   .web-cursor {
-    background-image: url("/assets/images/web-cursor.png");
+    background-image: url("/assets/images/cursor/web-cursor.png");
     background-repeat: no-repeat;
     position: relative;
     background-size: 120px;
