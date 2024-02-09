@@ -48,12 +48,12 @@ function Projects() {
             ></Image>
           </div>
           <div className="col-md-6">
-            <Link to="/project/presensi" className="text-decoration-none">
+            <a href="/project/presensi" className="text-decoration-none">
               <p className="f-22 f-l-bold text-white">
                 Presensi - Aplikasi untuk Manajemen Efisien dan Karyawan yang
                 Lebih Produktif.
               </p>
-            </Link>
+            </a>
             <p className="tag-category-green-r">
               <FontAwesomeIcon icon={faAndroid} style={{ marginRight: 3 }} />{" "}
               Android Apps
@@ -77,15 +77,13 @@ function Projects() {
 
         <Row className="card-projects-right">
           <div className="col-md-6 order-1">
-            <a
-              href="detail_projects/deail_e-store.html"
-              className="text-decoration-none"
-            >
+            <a className="text-decoration-none" href="/project/pet-care">
               <p className="f-22 f-l-bold text-white ">
                 "Pet Care+" Aplikasi Terbaik untuk Reservasi Penitipan dan
                 Perawatan Hewan Peliharaan
               </p>
             </a>
+
             <div className="container">
               <div className="row">
                 <p className="tag-category-green-l">
@@ -133,10 +131,7 @@ function Projects() {
             ></Image>
           </div>
           <div className="col-md-6">
-            <a
-              href="detail_projects/deail_e-store.html"
-              className="text-decoration-none"
-            >
+            <a href="/project/kashku" className="text-decoration-none">
               <p className="f-22 f-l-bold text-white ">
                 Kashku - Mengelola Keuangan dengan Mudah, Memahami dengan Cerdas
               </p>
@@ -165,8 +160,8 @@ function Projects() {
         <Row className="card-projects-right">
           <div className="col-md-6 order-1">
             <a
-              href="detail_projects/deail_e-store.html"
               className="text-decoration-none"
+              href="/project/book-management"
             >
               <p className="f-22 f-l-bold text-white ">
                 Mobile Book Management Apps
@@ -210,14 +205,12 @@ function Projects() {
             ></Image>
           </div>
           <div className="col-md-6">
-            <a
-              href="detail_projects/deail_e-store.html"
-              className="text-decoration-none"
-            >
+            <a className="text-decoration-none" href="/project/estore">
               <p className="f-22 f-l-bold text-white ">
                 Flutter UI Design Mobile Application EStore with FakeStore API
               </p>
             </a>
+
             <p className="tag-category-green-r">
               <FontAwesomeIcon icon={faAndroid} style={{ marginRight: 3 }} />{" "}
               Android App
@@ -239,10 +232,7 @@ function Projects() {
 
         <Row className="card-projects-right">
           <div className="col-md-6 order-1">
-            <a
-              href="detail_projects/deail_e-store.html"
-              className="text-decoration-none"
-            >
+            <a className="text-decoration-none" href="/project/smart-home">
               <p className="f-22 f-l-bold text-white ">
                 Design Landing Page Website Smart Home with Internet of Things
               </p>

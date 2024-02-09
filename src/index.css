@@ -53,7 +53,6 @@
   src: url("/assets/fonts/DMSerifDisplay-Regular.ttf");
 }
 
-
 .elipse2 {
   position: absolute;
   width: 30%;
@@ -148,7 +147,7 @@
   color: #888888;
 }
 
-.text-content{
+.text-content {
   color: #707070;
 }
 
@@ -171,7 +170,7 @@ body {
   backdrop-filter: blur(10px) !important;
 }
 
-.bg-white{
+.bg-white {
   background-color: #ffffff !important;
 }
 
@@ -317,6 +316,10 @@ body {
   background-color: #ffffff !important;
   border-radius: 10px 10px 0px 0px;
 }
+.footer-custom-black {
+  background-color: #1a1a1a !important;
+  border-radius: 10px 10px 0px 0px;
+}
 
 .background-white {
   background-color: #ffffff !important;
@@ -399,17 +402,15 @@ body {
 
 .drop-cap::first-letter {
   -webkit-initial-letter: 3;
-          initial-letter: 3;
+  initial-letter: 3;
   font-weight: bold;
   font-family: "DMSeriesDisplay-Regular";
-  margin-right: .75em;
+  margin-right: 0.75em;
 }
 
-.image-banner{
+.image-banner {
   border-radius: 10px;
 }
-
-
 
 @media (max-width: 991.98px) {
   .intro-subtitle {
@@ -432,7 +433,6 @@ body {
   /* Project Page */
   .card-projects-right {
     text-align: left;
-   
   }
 }
 
@@ -478,10 +478,5 @@ body {
   /* Project Page */
   .card-projects-right {
     text-align: left;
-   
   }
-
-
 }
-
-

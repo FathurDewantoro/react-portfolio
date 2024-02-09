@@ -2,6 +2,20 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import React, { useEffect, useState } from "react";
 import { Link, Navigate } from "react-router-dom";
 
+class scrollHelper {
+  useIsBack() {
+    const location = useLocation();
+    const [isBack, setIsBack] = useState(false);
+
+    useEffect(() => {
+      setIsBack(sessionStorage[location.pathname + "_key"] === location.key);
+      sessionStorage[location.pathname + "_key"] = location.key;
+    }, [location]);
+
+    return isBack;
+  }
+}
+
 function CustomNavbar() {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -25,7 +39,7 @@ function CustomNavbar() {
     >
       <Container>
         <Navbar.Brand>
-          <Link to="/">
+          <a href="/">
             <img
               alt=""
               src="/assets/icons/F_logo.png"
@@ -33,20 +47,28 @@ function CustomNavbar() {
               height="30"
               className="d-inline-block align-top"
             />
-          </Link>
+          </a>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Link to="/projects" className="nav-link f-l-light">
+            <a href="/projects" className="nav-link f-l-light">
               Projects
-            </Link>
-            <Link to="/cv-resume" className="nav-link f-l-light">
+            </a>
+            <a
+              target="_blank"
+              className="nav-link f-l-light"
+              href="/assets/cv/CV_2024.pdf"
+            >
               CV Resume
-            </Link>
-            <Link to="/social-media" className="nav-link f-l-light">
-              Social Media
-            </Link>
+            </a>
+            <a
+              className="nav-link f-l-light"
+              href="mailto:fathurtiasdewantoro@gmail.com?subject=Tawaran%20Kerjasama"
+              target="_blank"
+            >
+              Contact Me
+            </a>
           </Nav>
         </Navbar.Collapse>
       </Container>

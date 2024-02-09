@@ -18,13 +18,12 @@ function useIsBack() {
 }
 
 function Dashboard() {
-
   const isBack = useIsBack();
   if (!isBack) {
     window.scrollTo(0, 0);
   }
-  const list = ["work-1.png", "work-3.png", "work-2.png"];
-
+  const list = ["work-2.png", "work-1.png", "work-3.png"];
+  const linkWork = ["presensi", "kashku", "book-management"];
 
   return (
     <>
@@ -54,7 +53,11 @@ function Dashboard() {
               learning no-code development tools as webflow.
             </p>
           </div>
-          <Button className="btn btn-light px-5 py-3 f-16 f-l-medium">
+          <Button
+            href="mailto:fathurtiasdewantoro@gmail.com?subject=Tawaran%20Kerjasama"
+            target="_blank"
+            className="btn btn-light px-5 py-3 f-16 f-l-medium"
+          >
             Connect with me
           </Button>
         </Container>
@@ -70,10 +73,12 @@ function Dashboard() {
           <div>
             <ul className="custom-list d-flex flex-row overflow-x-auto ps-0">
               {list.map((item, index) => (
-                <Image
-                  src={"/assets/images/work/" + item}
-                  className={index === list.length - 1 ? "" : "me-4"}
-                />
+                <a href={"/project/"+linkWork[index]}>
+                  <Image
+                    src={"/assets/images/work/" + item}
+                    className={index === list.length - 1 ? "" : "me-4"}
+                  />
+                </a>
               ))}
             </ul>
           </div>
@@ -95,12 +100,19 @@ function Dashboard() {
           </p>
           <Row className="mt-5">
             <Col className="d-flex justify-content-end">
-              <Button className="btn btn-border f-l-medium">
+              <Button
+                href="/projects"
+                className="btn btn-border f-l-medium px-3 py-3"
+              >
                 See More Projects
               </Button>
             </Col>
             <Col className="d-flex justify-content-start">
-              <Button className="btn btn-light px-5 py-3 f-16 f-l-medium">
+              <Button
+                href="mailto:fathurtiasdewantoro@gmail.com?subject=Tawaran%20Kerjasama"
+                target="_blank"
+                className="btn btn-light px-5 py-3 f-16 f-l-medium"
+              >
                 Email Me
               </Button>
             </Col>
@@ -153,26 +165,40 @@ function Dashboard() {
           <p className=" text-gray p-0 m-0">
             For business inquiry please send email to
           </p>
-          <p className=" text-gray f-l-bold">fathurtiasdewantoro@gmail.com</p>
+          <a
+            href="mailto:fathurtiasdewantoro@gmail.com?subject=Tawaran%20Kerjasama"
+            target="_blank"
+            className="text-decoration-none"
+          >
+            <p className=" text-gray f-l-bold">fathurtiasdewantoro@gmail.com</p>
+          </a>
+          <p className="mb-1 text-gray f-14">You can find me at :</p>
           <div className="d-flex ">
-            <Image
-              height={30}
-              style={{ marginRight: 20 }}
-              className=""
-              src="/assets/icons/linkein.png"
-            ></Image>
-            <Image
-              height={30}
-              style={{ marginRight: 20 }}
-              className=""
-              src="/assets/icons/github.png"
-            ></Image>
-            <Image
+            <a
+              href="https://www.linkedin.com/in/fathurdewantoro/"
+              target="_blank"
+            >
+              <Image
+                height={30}
+                style={{ marginRight: 20 }}
+                className=""
+                src="/assets/icons/linkein.png"
+              ></Image>
+            </a>
+            <a href="https://github.com/FathurDewantoro" target="_blank">
+              <Image
+                height={30}
+                style={{ marginRight: 20 }}
+                className=""
+                src="/assets/icons/github.png"
+              ></Image>
+            </a>
+            {/* <Image
               height={30}
               style={{ marginRight: 20 }}
               className=""
               src="/assets/icons/dribble.png"
-            ></Image>
+            ></Image> */}
           </div>
         </Container>
       </div>
